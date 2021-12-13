@@ -1,0 +1,182 @@
+/* Globales */
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Josefin+Sans:wght@700&family=Montserrat:wght@100;200;300;400;500;600;800&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* Menu */
+
+#logo {
+    width: 15rem;
+    height: auto;
+    margin-right: 3rem;
+}
+
+#menu a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #3f3f3f;
+}
+
+#menu button {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* Slider */
+
+.carousel-inner {
+    height: 35rem;
+}
+
+.carousel-item {
+    color: white;
+    position: relative;
+}
+
+.carousel-caption {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    font-size: 1.2rem;
+    margin-top: 25rem;
+    background-color: rgba(2, 2, 2, 0.521);
+}
+
+
+/* Servicios */
+
+#servicios img {
+    width: 160px;
+    height: 160px;
+}
+
+
+/* Equipo y Localizacion */
+
+#numeros-local div {
+    padding: 0 20px 0 0;
+    height: 48px;
+    border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child) {
+    padding-left: 20px;
+}
+
+#numeros-local p {
+    margin: 0;
+}
+
+
+/* Mapa */
+
+#mapa {
+    width: 400%;
+    height: 500px;
+}
+
+#local {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.wrapper {
+    width: 50%;
+    margin-left: 550px;
+    padding-top: 100px;
+}
+
+
+/* Media Querys ********************************/
+
+
+/* Pantalla grande*/
+
+@media(max-width: 1200px) {
+    #local {
+        flex-wrap: wrap;
+    }
+    .wrapper {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+
+/* Pantalla mediana*/
+
+@media(max-width: 800px) {
+    .carousel-caption {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        position: absolute;
+        font-size: 1rem;
+        margin-top: 11rem;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        margin-bottom: 13rem;
+    }
+}
+
+
+/* Pantalla pequeña*/
+
+@media(max-width: 768px) {
+    #intro,
+    #equipo {
+        width: 90% !important;
+    }
+    .servicio-fila {
+        width: 100% !important;
+        text-align: center;
+    }
+    .carousel-caption {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        position: absolute;
+        font-size: 1rem;
+        margin-top: 13rem;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        margin-bottom: 14rem;
+    }
+}
+
+
+/* Pantalla xs*/
+
+@media(max-width: 576px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    .carousel-caption {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        position: absolute;
+        font-size: 0.8rem;
+        margin-top: 9rem;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        margin-bottom: 17rem;
+    }
+}
